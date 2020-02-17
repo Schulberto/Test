@@ -5,13 +5,13 @@ sudo chmod 777 /tmp/install.log
 echo $(date) >> /tmp/install.log
 echo "-----------START-------------" >> /tmp/install.log
 
-echo "-----------openjdk-8-jre-------------" >> /tmp/install.log
-sudo apt-get update && sudo apt-get install openjdk-8-jre -y >> /tmp/install.log
+#echo "-----------openjdk-8-jre-------------" >> /tmp/install.log
+#sudo apt-get update && sudo apt-get install openjdk-8-jre -y >> /tmp/install.log
 
-echo "-----------jenkins-------------" >> /tmp/install.log
-wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - >> /tmp/install.log
-sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list' >> /tmp/install.log
-sudo apt-get update && sudo apt-get install jenkins -y >> /tmp/install.log
+#echo "-----------jenkins-------------" >> /tmp/install.log
+#wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add - >> /tmp/install.log
+#sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list' >> /tmp/install.log
+#sudo apt-get update && sudo apt-get install jenkins -y >> /tmp/install.log
 
 echo "-----------nginx-------------" >> /tmp/install.log
 sudo apt-get -y install nginx >> /tmp/install.log
